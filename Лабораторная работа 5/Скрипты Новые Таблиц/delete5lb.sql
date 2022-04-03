@@ -1,0 +1,17 @@
+USE NewLb
+
+delete [GAME_REPORT]
+delete [GAME_REFEREES]
+delete [SEASON_RATING]
+delete [PLAYER_RUNK]
+delete [COACH_TEAM]
+delete [COACH]
+delete [PLAYER_TEAM]
+delete [REFEREES]
+delete [PHYSICAL_DATA]
+delete [RUNK]
+delete [GAME]
+delete [TEAM]
+delete [SPORTSCHOOL]
+delete [SEASON]
+delete [PLAYER]

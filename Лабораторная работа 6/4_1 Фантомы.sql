@@ -1,0 +1,16 @@
+--4.1-фантомы
+--SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+--SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ --видна проблема
+--SET TRANSACTION ISOLATION LEVEL SERIALIZABLE--нет проблемы
+
+BEGIN TRAN
+
+--читаем кол-во игроков с именем Ваня
+SELECT count(*) FROM PLAYER 
+WHERE name = 'иван'
+-- 
+--читаем кол-во игроков с именем Ваня
+SELECT count(*) FROM PLAYER 
+WHERE name = 'иван'
+COMMIT

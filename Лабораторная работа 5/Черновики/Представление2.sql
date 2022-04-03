@@ -1,0 +1,7 @@
+use NewLb
+if (OBJECT_ID ('VIEW_2') IS NOT NULL)
+  DROP VIEW VIEW_2;
+GO
+CREATE VIEW VIEW_2 AS 
+
+select 
